@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Optima, sans-serif;
+    background: url('../img/background.png') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgb(255 255 255 / 30%);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.names {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links span {
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+.button {
+    background-color: #faf096;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    font-family: Optima, sans-serif;
+    font-size: 1.3rem;
+}
+
+.button:hover {
+    background-color: #faf096;
+}
+
+.hero {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.hero h1 {
+    font-size: 5.4rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+    white-space: pre-line;
+    padding-top: 3.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.explore-button {
+    background-color: #faf096;
+    color: black;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-family: Optima, sans-serif;
+}
+
+.explore-button:hover {
+    background-color: #faf096;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.comet img {
+    width: 20px;
+    height: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}
